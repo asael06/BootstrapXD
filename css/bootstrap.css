@@ -46,8 +46,6 @@ html {
 }
 
 body {
-  position: relative;
-  padding-top: var(--logo-height);
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -146,8 +144,7 @@ a.bg-success:hover {
 
 /* ********** My Styles ********** */
 .HeroImage {
-  padding-top: 0;
-  min-height: calc(100vh - var(--logo-height));
+  min-height: 100vh;
   background-size:auto;
   background-color: rgb(108, 130, 145);
   background-image: linear-gradient(135deg,rgba(47,145,224,.91),rgba(7,31,51,.97) 79%);
