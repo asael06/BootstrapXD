@@ -136,10 +136,35 @@ a.bg-success:hover {
   color: var(--alternate-modal-color);
 }
 
-.carousel {
-  margin: auto;
-  max-width: 500px;
-  height: auto;
+.card-img-overlay {
+  background-color: var(--second-modal-color);
+}
+
+.card-text a {
+  color: var(--action-color);
+}
+
+.card-text a:hover {
+  color: var(--action-modal-color);
+}
+
+.form-control {
+  border-color: var(--second-color);
+}
+
+.form-control:focus {
+  border-color: var(--second-color);
+  box-shadow: 0 0 0 0.2rem var(--main-modal-color);
+}
+
+.form-group label {
+  color: var(--main-color);
+  border-color: var(--second-color);
+}
+
+.form-group .btn {
+  background-color: var(--main-color) !important;
+  font-weight: bold;
 }
 
 /* ********** My Styles ********** */
@@ -155,6 +180,12 @@ a.bg-success:hover {
   background-color: var(--alternate-color);
 }
 
+.Website .carousel {
+  margin: auto;
+  max-width: 500px;
+  height: auto;
+}
+
 .ResponsiveSites figure {
   margin: 0;
   text-align: center;
@@ -163,6 +194,37 @@ a.bg-success:hover {
 .ResponsiveSites figure img {
   padding: .5rem;
   background-color: var(--alternate-color);
+}
+
+.WorkFlow-steps sup {
+  font-size: 1rem;
+  color: var(--main-color);
+}
+
+.SinglePage,
+.MultiPage {
+  background-image: url('../img/site-singlepage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.MultiPage {
+  background-image: url('../img/site-multipage.jpg');
+}
+
+.SinglePage > .u-fullScreen,
+.MultiPage > .u-fullScreen {
+  background-color: var(--bg-modal-color);
+}
+
+.AboutInfo {
+  padding: 1rem;
+  font-size: 150%;
+  background-color: var(--second-modal-color);
+}
+
+.Footer {
+  background-color: var(--second-color);
 }
 
 .u-fullScreen {
