@@ -61,16 +61,117 @@ a {
 
 a:hover { color: var(--link-hover-color); }
 
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 { font-family: inherit; }
+
+h2 { font-size: 3rem; }
+
+h3 { font-size: 2.5rem; }
+
 ::selection {
   background-color: var(--main-color);
   color: var(--second-color);
 }
 
 /* ********** Foundation Styles ********** */
+.title-bar,
+.top-bar,
+.top-bar ul {
+  padding: 0;
+  margin: 0;
+  background-color: var(--second-color);
+}
+
+.title-bar-title img {
+  margin-left: var(--logo-spacing);
+  padding: var(--logo-spacing);
+  width: auto;
+  height: var(--logo-height);
+}
+
+.menu-icon { right: 1rem; }
+
+.menu-icon::after { transition: all .3s ease; }
+
+.menu-icon:hover::after {
+  background-color: var(--main-color);
+  box-shadow: 0 7px 0 var(--main-color), 0 14px 0 var(--main-color);
+}
+
+.menu a {
+  padding: 1rem;
+  color: var(--main-color);
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.menu a:hover,
+.menu a.is-active {
+  background-color: var(--main-modal-color);
+  color: var(--bg-color);
+}
+
+.top-bar-right { width: 100%; }
+
+.button.success {
+  background-color: var(--action-color);
+  color: #FFF;
+}
+
+.button.success:hover, .button.success:focus {
+  background-color: var(--action-color);
+  color: #FFF;
+  opacity: .85;
+  transition: all .3s ease
+}
 
 /* ********** My Styles ********** */
+.Header > .sticky { background-color: var(--second-color); }
 
+.HeroImage {
+  color: #FFF;
+  background-size:auto;
+  background-color: rgb(108, 130, 145);
+  background-image: linear-gradient(135deg,rgba(47,145,224,.91),rgba(7,31,51,.97) 79%);
+  background-image:linear-gradient(131deg,rgba(28,118,173,.92), rgba(83, 184, 152, 1));
+}
 
+.HeroImage .u-fullScreen { min-height: calc(100vh - var(--header-height)); }
+
+.Services {
+  padding: 3rem;
+}
+
+.Services img {
+  padding: 1rem;
+  width: auto;
+  max-height: 200px;
+  object-fit: contain;
+  background-color: var(--alternate-color);
+}
+
+.ResponsiveSites figure img {
+  padding: .5rem;
+  background-color: var(--alternate-color);
+}
+
+.u-fullScreen {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.u-flowText { font-size: 1.25rem; }
+
+.u-bgWhite { background-color: #FFF; }
+
+.u-py-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 /* ********** Media Queries ********** */
 /* Small only */
 @media screen and (max-width: 39.9375em) {}
@@ -79,4 +180,11 @@ a:hover { color: var(--link-hover-color); }
 @media screen and (min-width: 40em) {}
 
 /* Large - 1024 */
-@media screen and (min-width: 64em) {}
+@media screen and (min-width: 64em) {
+  .top-bar-right { width: initial; }
+
+  .menu a:hover,
+  .menu a.is-active { background-color: transparent; }
+
+  .u-flowText { font-size: 1.75rem; }
+}

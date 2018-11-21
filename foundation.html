@@ -15,58 +15,258 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.5.1/dist/css/foundation.min.css"
     integrity="sha256-1mcRjtAxlSjp6XJBgrBeeCORfBp/ppyX4tsvpQVCcpA= sha384-b5S5X654rX3Wo6z5/hnQ4GBmKuIJKMPwrJXn52ypjztlnDK2w9+9hSMBz/asy9Gw sha512-M1VveR2JGzpgWHb0elGqPTltHK3xbvu3Brgjfg4cg5ZNtyyApxw/45yHYsZ/rCVbfoO5MSZxB241wWq642jLtA=="
     crossorigin="anonymous">
+  <!-- Insert this within your head tag and after foundation.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/motion-ui@1.2.3/dist/motion-ui.min.css">
   <link rel="stylesheet" href="./css/foundation.css">
 </head>
 
 <body>
-  <div class="grid-container">
-    <aside class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="large">
-      <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
-      <div class="title-bar-title">
-        <a href="./foundation.html">
-          <img src="./img/bad-dog-studio-logo.png" alt="BAD DOG STUDIO">
-        </a>
+  <header class="Header" data-sticky-container>
+    <section class="sticky sticky-topbar" data-sticky data-sticky-on="small" data-options="marginTop:0; anchor: page;"
+      style="width: 100%;">
+      <div class="grid-container">
+        <aside class="title-bar flex-dir-row-reverse" data-responsive-toggle="responsive-menu" data-hide-for="large">
+          <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+          <div class="title-bar-title flex-child-grow">
+            <a href="./foundation.html">
+              <img src="./img/bad-dog-studio-logo.png" alt="BAD DOG STUDIO">
+            </a>
+          </div>
+        </aside>
+        <article class="top-bar" id="responsive-menu">
+          <aside class="top-bar-left show-for-large">
+            <div class="title-bar-title">
+              <a href="./foundation.html">
+                <img src="./img/bad-dog-studio-logo.png" alt="BAD DOG STUDIO">
+              </a>
+            </div>
+          </aside>
+          <nav class="top-bar-right">
+            <ul class="menu vertical large-horizontal" data-toggle="respinsive-menu" data-magellan data-options="animationEasing: swing; animationDuration: 1000; offset: 50;">
+              <li><a href="#hola">Hola</a></li>
+              <li><a href="#sitios">Sitios</a></li>
+              <li><a href="#clientes">Clientes</a></li>
+              <li><a href="#flujo">Flujo</a></li>
+              <li><a href="#packs">Packs</a></li>
+              <li><a href="#interesado">¿Interesado?</a></li>
+            </ul>
+          </nav>
+        </article>
       </div>
-    </aside>
-    <article class="top-bar" id="responsive-menu">
-      <aside class="top-bar-left show-for-large">
-        <div class="title-bar-title">
-          <a href="./foundation.html">
-            <img src="./img/bad-dog-studio-logo.png" alt="BAD DOG STUDIO">
+    </section>
+  </header>
+  <section id="hola" data-magellan-target="hola" class="HeroImage">
+    <div class="grid-container">
+      <div class="grid-x align-center-middle u-fullScreen">
+        <article class="cell large-5">
+          <h2>¿Necesitas un increíble sitio web?</h2>
+          <p class="u-flowText">
+            Un sitio hermoso, moderno, responsivo y personalizado para tu compañia, negocio, marca, servicio o
+            producto.
+          </p>
+          <a data-smooth-scroll href="#servicios" class="button large success">
+            <b>Sí, ¡empecemos!</b>
           </a>
+        </article>
+        <article class="cell large-7">
+          <img class="img-fluid" src="./img/header-image.png" alt="¿Necesitas un asombroso sitio web?">
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="servicios" data-magellan-target="servicios" class="grid-x align-center-middle u-fullScreen u-bgWhite Services">
+    <div class="grid-container">
+      <article class="grid-x grid-margin-x grid-padding-x">
+        <div class="cell medium-6 large-3 grid-x">
+          <article class="card">
+            <img src="./img/icon-sites.png" alt="Nuevo sitio web">
+            <div class="card-section">
+              <h5>Nuevo sitio web</h5>
+              <p>¿Necesitas un (nuevo) sitio web 100% responsivo?</p>
+              <a data-smooth-scroll href="#sitios">
+                Más detalles
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </article>
         </div>
-      </aside>
-      <nav class="top-bar-right">
-        <ul class="menu" data-toggle="respinsive-menu">
-          <li><a href="#hola">Hola</a></li>
-          <li><a href="#sitios">Sitios</a></li>
-          <li><a href="#clientes">Clientes</a></li>
-          <li><a href="#flujo">Flujo</a></li>
-          <li><a href="#packs">Packs</a></li>
-          <li><a href="#interesado">¿Interesado?</a></li>
-        </ul>
-      </nav>
-    </article>
-  </div>
-  <section id="hola" class="HeroImage">
-    <h2>Hola</h2>
+        <div class="cell medium-6 large-3 grid-x">
+          <article class="card">
+            <img src="./img/icon-clients.png" alt="Clientes">
+            <div class="card-section">
+              <h5>Clientes</h5>
+              <p>Clientes felices y proyectos hermosos.</p>
+              <a data-smooth-scroll href="#clientes">
+                Más detalles
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="cell medium-6 large-3 grid-x">
+          <article class="card">
+            <img src="./img/icon-workflow.png" alt="Flujo de Trabajo">
+            <div class="card-section">
+              <h5>Flujo de Trabajo</h5>
+              <p>Escucho tus necesidades. Discutamos tu proyecto.</p>
+              <a data-smooth-scroll href="#flujo">
+                Más detalles
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="cell medium-6 large-3 grid-x">
+          <article class="card">
+            <img src="./img/icon-about.png" alt="¿Interesado?">
+            <div class="card-section">
+              <h5>¿Interesado?</h5>
+              <p>Comencemos con tu nuevo proyecto.</p>
+              <a data-smooth-scroll href="#interesado">
+                Más detalles
+                <i class="fas fa-chevron-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </article>
+    </div>
   </section>
-  <section id="servicios" class="Services">
-    <h2>Servicios</h2>
+  <section id="sitios" data-magellan-target="sitios" class="Website">
+    <div class="grid-x align-center-middle u-fullScreen">
+      <article class="grid-container text-center">
+        <h2>¿Necesitas un nuevo <b>sitio web</b>?</h2>
+        <p class="u-flowText">Elaboro experiencias en línea, hermosas y atractivas.</p>
+        <div class="orbit" role="region" aria-label="Mis Sitios Web" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+          <div class="orbit-wrapper">
+            <div class="orbit-controls">
+              <button class="orbit-previous"><span class="show-for-sr">Anterior</span>&#9664;&#xFE0E;</button>
+              <button class="orbit-next"><span class="show-for-sr">Siguiente</span>&#9654;&#xFE0E;</button>
+            </div>
+            <ul class="orbit-container">
+              <li class="is-active orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/work-1.jpeg" alt="Trabajo 1">
+                  <figcaption class="orbit-caption">Trabajo 1</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/work-2.jpeg" alt="Trabajo 2">
+                  <figcaption class="orbit-caption">Trabajo 2</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/work-3.jpeg" alt="Trabajo 3">
+                  <figcaption class="orbit-caption">Trabajo 3</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/work-4.jpeg" alt="Trabajo 4">
+                  <figcaption class="orbit-caption">Trabajo 4</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/work-5.jpeg" alt="Trabajo 5">
+                  <figcaption class="orbit-caption">Trabajo 5</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/work-6.jpeg" alt="Trabajo 6">
+                  <figcaption class="orbit-caption">Trabajo 6</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/work-7.jpeg" alt="Trabajo 7">
+                  <figcaption class="orbit-caption">Trabajo 7</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/work-8.jpeg" alt="Trabajo 8">
+                  <figcaption class="orbit-caption">Trabajo 8</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/work-9.jpeg" alt="Trabajo 9">
+                  <figcaption class="orbit-caption">Trabajo 9</figcaption>
+                </figure>
+              </li>
+              <li class="orbit-slide">
+                <figure class="orbit-figure">
+                  <img class="orbit-image" src="./img/work-10.jpeg" alt="Trabajo 10">
+                  <figcaption class="orbit-caption">Trabajo 10</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="grid-x align-center-middle u-fullScreen u-bgWhite">
+      <article class="grid-container ResponsiveSites">
+        <div class="grid-x grid-margin-x grid-padding-x">
+          <div class="cell large-6">
+            <h3>Sitios web responsivos</h3>
+            <p>ol-12
+              Es importante proporcionar a tus visitantes una experiencia web óptima en dispositivos móviles. El
+              diseño
+              web
+              responsivo significa que tu sitio se adapta instantáneamente al dispositivo que el visitante utiliza.
+              ¡Mi
+              trabajo es hacer, que la visita de tus usuarios sea lo más agradable e intuitiva para
+              ellos!
+            </p>
+            <aside class="grid-x grid-margin-x grid-padding-x text-center">
+              <div class="cell small-3">
+                <figure>
+                  <img src="./img/icon-desktop.png" alt="Escritorio">
+                  <figcaption>Escritorio</figcaption>
+                </figure>
+              </div>
+              <div class="cell small-3">
+                <figure>
+                  <img src="./img/icon-tablet.png" alt="Tableta">
+                  <figcaption>Tableta</figcaption>
+                </figure>
+              </div>
+              <div class="cell small-3">
+                <figure>
+                  <img src="./img/icon-smarthphone-landscape.png" alt="Móvil">
+                  <figcaption>Móvil</figcaption>
+                </figure>
+              </div>
+              <div class="cell small-3">
+                <figure>
+                  <img src="./img/icon-smarthphone.png" alt="Móvil">
+                  <figcaption>Móvil</figcaption>
+                </figure>
+              </div>
+            </aside>
+          </div>
+          <div class="cell large-6">
+            <img src="./img/section-responsive.jpeg" alt="Sitios Responsive">
+          </div>
+        </div>
+      </article>
+    </div>
   </section>
-  <section id="sitios" class="Website">
-    <h2>Sitios Web</h2>
-  </section>
-  <section id="clientes" class="Customers">
+  <section id="clientes" data-magellan-target="clientes" class="Customers">
     <h2>Clientes</h2>
   </section>
-  <section id="flujo" class="WorkFlow">
+  <section id="flujo" data-magellan-target="flujo" class="WorkFlow">
     <h2>Flujo</h2>
   </section>
-  <section id="packs" class="Packs">
+  <section id="packs" data-magellan-target="packs" class="Packs">
     <h2>Packs</h2>
   </section>
-  <section id="interesado" class="Contact">
+  <section id="interesado" data-magellan-target="interesado" class="Contact">
     <h2>Contacto</h2>
   </section>
   <footer class="Footer">
