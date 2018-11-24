@@ -9,5 +9,8 @@
         $('.top-bar').hide()
       }
     })
+
+    const copy = d.querySelector('.Footer small')
+    copy.innerHTML = `&copy; ${new Date().getFullYear()} @jonmircha`
   })
 })(document, window);
