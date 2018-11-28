@@ -61,14 +61,101 @@ a:hover { color: var(--link-hover-color); }
 }
 
 /* ********** Materialize Styles ********** */
-nav {
+nav,
+.navbar-fixed  {
   background-color: var(--second-color);
   height: var(--nav-height);
   line-height: var(--nav-height);
 }
 
+.brand-logo img {
+  padding: var(--logo-spacing);
+  max-height: var(--nav-height);
+}
+
+.sidenav-trigger:hover { color: var(--main-color); }
+
+.sidenav {
+  top: var(--nav-height);
+  background-color: var(--second-modal-color);
+}
+
+.sidenav li:hover {
+  background-color: var(--main-modal-color);
+  transition: all .3s ease;
+}
+
+.sidenav li > a,
+.desktop-nav a {
+  color: var(--main-color);
+  font-size: 1.15rem;
+  font-weight: bold;
+  transition: all .3s ease;
+}
+
+.sidenav li > a:hover { color: var(--bg-color); }
+
+.desktop-nav a:hover {
+  color: var(--bg-color);
+  background-color: transparent;
+}
+
+.green { background-color: var(--action-color) !important; }
+
+.green-text { color: var(--action-color) !important; }
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) { color: var(--alternate-color); }
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating):hover { color: var(--alternate-modal-color); }
+
+.card .card-image img { padding: 2rem; }
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.slider {
+  margin: auto;
+  max-width: 500px;
+  height: auto;
+}
+
 
 /* ********** My Styles ********** */
+.HeroImage {
+  min-height: calc(100vh - var(--nav-height));
+  background-size:auto;
+  background-color: rgb(108, 130, 145);
+  background-image: linear-gradient(135deg,rgba(47,145,224,.91),rgba(7,31,51,.97) 79%);
+  background-image:linear-gradient(131deg,rgba(28,118,173,.92), rgba(83, 184, 152, 1));
+}
+
+.Services img { background-color: var(--alternate-color); }
+
+.ResponsiveSites figure {
+  margin: 0;
+  text-align: center;
+}
+
+.ResponsiveSites figure img {
+  padding: .5rem;
+  background-color: var(--alternate-color);
+}
+
+.Footer {
+  padding: 1rem;
+  background-color: var(--second-color);
+  text-align: center;
+}
+
+.SocialMedia {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
 /* ********** Media Queries Medium ********** */
 @media only screen and (min-width: 601px) {
@@ -77,7 +164,12 @@ nav {
 
 /* ********** Media Queries Large ********** */
 @media only screen and (min-width: 993px) {
-
+  .u-lg-flexCenter {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 /* ********** Media Queries ExtraLarge ********** */
 @media only screen and (min-width: 1201px) {

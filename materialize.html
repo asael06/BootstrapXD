@@ -17,32 +17,36 @@
 
 <body>
   <header class="Header">
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li>
-            <a href="#hola">Hola</a>
-          </li>
-          <li>
-            <a href="#sitios">Sitios</a>
-          </li>
-          <li>
-            <a href="#clientes">Clientes</a>
-          </li>
-          <li>
-            <a href="#flujo">Flujo</a>
-          </li>
-          <li>
-            <a href="#packs">Packs</a>
-          </li>
-          <li>
-            <a href="#interesado">¿Interesado?</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper container">
+          <a href="#!" class="brand-logo left">
+            <img class="responsive-img" src="./img/bad-dog-studio-logo.png" alt="BAD DOG STUDIO">
+          </a>
+          <a href="#" data-target="mobile-menu" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down desktop-nav">
+            <li>
+              <a href="#hola">Hola</a>
+            </li>
+            <li>
+              <a href="#sitios">Sitios</a>
+            </li>
+            <li>
+              <a href="#clientes">Clientes</a>
+            </li>
+            <li>
+              <a href="#flujo">Flujo</a>
+            </li>
+            <li>
+              <a href="#packs">Packs</a>
+            </li>
+            <li>
+              <a href="#interesado">¿Interesado?</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <ul class="sidenav" id="mobile-menu">
       <li>
         <a class="sidenav-close" href="#hola">Hola</a>
@@ -64,14 +68,160 @@
       </li>
     </ul>
   </header>
-  <section id="hola" class="HeroImage">
-    <h2>Hola</h2>
+  <section id="hola" class="white-text valign-wrapper HeroImage">
+    <div class="container row u-lg-flexCenter">
+      <article class="col s12 xl5">
+        <h2>¿Necesitas un increíble sitio web?</h2>
+        <p class="flow-text">
+          Un sitio hermoso, moderno, responsivo y personalizado para tu compañia, negocio, marca, servicio o
+          producto.
+        </p>
+        <a href="#servicios" class="btn btn-large waves-effect green white-text">
+          <b>Sí, ¡empecemos!</b>
+        </a>
+      </article>
+      <article class="col s12 xl7">
+        <img class="responsive-img" src="./img/header-image.png" alt="¿Necesitas un asombroso sitio web?">
+      </article>
+    </div>
   </section>
-  <section id="servicios" class="Services">
-    <h2>Servicios</h2>
+  <section id="servicios" class="section white Services">
+    <article class="container row u-lg-flexCenter">
+      <div class="col s12 m6 l3">
+        <article class="card large">
+          <div class="card-image">
+            <img src="./img/icon-sites.png" alt="Nuevo sitio web">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Nuevo sitio web</span>
+            <p>¿Necesitas un (nuevo) sitio web 100% responsivo?</p>
+          </div>
+          <div class="card-action">
+            <a href="#sitios" class="valign-wrapper">
+              Más detalles
+              <i class="material-icons tiny">chevron_right</i>
+            </a>
+          </div>
+        </article>
+      </div>
+      <div class="col s12 m6 l3">
+        <article class="card large">
+          <div class="card-image">
+            <img src="./img/icon-clients.png" alt="Clientes">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Clientes</span>
+            <p>Clientes felices y proyectos hermosos.</p>
+          </div>
+          <div class="card-action">
+            <a href="#clientes" class="valign-wrapper">
+              Más detalles
+              <i class="material-icons tiny">chevron_right</i>
+            </a>
+          </div>
+        </article>
+      </div>
+      <div class="col s12 m6 l3">
+        <article class="card large">
+          <div class="card-image">
+            <img src="./img/icon-workflow.png" alt="Flujo de Trabajo">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Flujo de Trabajo</span>
+            <p>Escucho tus necesidades. Discutamos tu proyecto.</p>
+          </div>
+          <div class="card-action">
+            <a href="#flujo" class="valign-wrapper">
+              Más detalles
+              <i class="material-icons tiny">chevron_right</i>
+            </a>
+          </div>
+        </article>
+      </div>
+      <div class="col s12 m6 l3">
+        <article class="card large">
+          <div class="card-image">
+            <img src="./img/icon-about.png" alt="¿Interesado?">
+          </div>
+          <div class="card-content">
+            <span class="card-title">¿Interesado?</span>
+            <p>Comencemos con tu nuevo proyecto.</p>
+          </div>
+          <div class="card-action">
+            <a href="#interesado" class="valign-wrapper">
+              Más detalles
+              <i class="material-icons tiny">chevron_right</i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </article>
   </section>
-  <section id="sitios" class="Website">
-    <h2>Sitios Web</h2>
+  <section id="sitios" class="section Website">
+    <article class="container center">
+      <h2>¿Necesitas un nuevo <b>sitio web</b>?</h2>
+      <p class="flow-text">Elaboro experiencias en línea, hermosas y atractivas.</p>
+      <div class="slider">
+        <ul class="slides">
+          <li><img src="./img/work-1.jpeg" alt="Trabajo 1"></li>
+          <li><img src="./img/work-2.jpeg" alt="Trabajo 2"></li>
+          <li><img src="./img/work-3.jpeg" alt="Trabajo 3"></li>
+          <li><img src="./img/work-4.jpeg" alt="Trabajo 4"></li>
+          <li><img src="./img/work-5.jpeg" alt="Trabajo 5"></li>
+          <li><img src="./img/work-6.jpeg" alt="Trabajo 6"></li>
+          <li><img src="./img/work-7.jpeg" alt="Trabajo 7"></li>
+          <li><img src="./img/work-8.jpeg" alt="Trabajo 8"></li>
+          <li><img src="./img/work-9.jpeg" alt="Trabajo 9"></li>
+          <li><img src="./img/work-10.jpeg" alt="Trabajo 10"></li>
+        </ul>
+      </div>
+    </article>
+    <br><br>
+    <article class="white section ResponsiveSites">
+      <div class="container u-lg-flexCenter">
+        <div class="row">
+          <div class="col s12 l6">
+            <h3>Sitios web responsivos</h3>
+            <p>
+              Es importante proporcionar a tus visitantes una experiencia web óptima en dispositivos móviles. El diseño
+              web
+              responsivo significa que tu sitio se adapta instantáneamente al dispositivo que el visitante utiliza. ¡Mi
+              trabajo es hacer, que la visita de tus usuarios sea lo más agradable e intuitiva para
+              ellos!
+            </p>
+            <aside class="row">
+              <div class="col s3">
+                <figure>
+                  <img class="responsive-img" src="./img/icon-desktop.png" alt="Escritorio">
+                  <figcaption>Escritorio</figcaption>
+                </figure>
+              </div>
+              <div class="col s3">
+                <figure>
+                  <img class="responsive-img" src="./img/icon-tablet.png" alt="Tableta">
+                  <figcaption>Tableta</figcaption>
+                </figure>
+              </div>
+              <div class="col s3">
+                <figure>
+                  <img class="responsive-img" src="./img/icon-smarthphone-landscape.png" alt="Móvil">
+                  <figcaption>Móvil</figcaption>
+                </figure>
+              </div>
+              <div class="col s3">
+                <figure>
+                  <img class="responsive-img" src="./img/icon-smarthphone.png" alt="Móvil">
+                  <figcaption>Móvil</figcaption>
+                </figure>
+              </div>
+            </aside>
+          </div>
+          <div class="col s12 l6">
+            <img class="responsive-img materialboxed" src="./img/section-responsive.jpeg" alt="Sitios Responsive">
+          </div>
+        </div>
+      </div>
+    </article>
   </section>
   <section id="clientes" class="Customers">
     <h2>Clientes</h2>
@@ -86,7 +236,41 @@
     <h2>Interesado</h2>
   </section>
   <footer class="Footer">
-    <h2>Footer</h2>
+    <div class="container">
+      <ul class="flow-text SocialMedia">
+        <li>
+          <a href="https://facebook.com/" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/jonmircha/edframeworks-css2018" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://api.whatsapp.com/send?phone=5215512345678" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </li>
+      </ul>
+      <small class="white-text"></small>
+    </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="./js/materialize.js"></script>
